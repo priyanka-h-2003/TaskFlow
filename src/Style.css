@@ -1,0 +1,247 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page Background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background:#f5f7fb;
+}
+
+.filter {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* Main Container */
+.container {
+  padding: 20px 40px;
+}
+
+/* Title */
+.container h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+.container p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+h1 {
+  margin-bottom: 4px;
+}
+
+p {
+  margin-left: 3px;
+  font-size: 13px;
+}
+
+.heading {
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif ;
+}
+
+.para {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/* Input Section */
+.input-section {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+
+/* Dropdown */
+.input-section select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* Add Button */
+.add-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background: gray;
+}
+
+/* Task List */
+.task-list {
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input {
+  flex:1;
+  padding: 10px;
+}
+
+select {
+  padding: 8px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  margin-right: 10px;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+}
+
+.actions {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.task-text {
+  margin-left: 10px;
+}
+/* 🔹 Common button style */
+button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  color: #333;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.med {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.gen {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+/* Hover effect */
+button:hover {
+  background: #eaeaea;
+}
+
+/* 🔹 Add Task button */
+form button {
+  background: #2d2d2d;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+}
+
+form button:hover {
+  background: #444;
+}
+
+/* 🔹 Task buttons (Complete / Delete) */
+.actions button {
+  background: none;
+  border: none;
+  color: #777;
+  font-size: 13px;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 4px, 8px;
+}
+
+.actions button:hover {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+/* 🔹 Clear button */
+.clear-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.clear-btn:hover {
+  background: #ff6b6b;
+}
+
+/* Stats */
+.stats {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #666;
+}
+
+.meta {
+  display: none;
+}
+
+.progress-bar {
+  width: 97%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
