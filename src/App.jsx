@@ -27,6 +27,15 @@ export default function App() {
     setTasks(tasks.filter((_, i) => i != index));
   }
 
+  const clearAllTasks = () => {
+    setTasks([]);
+  }
+
+  const clearTasks = () => {
+    const upTasks = tasks.filter(task => ! task.completed);
+    setTasks(upTasks); 
+  }
+
   return(
     <div className="container">
       <h1 className="heading">TaskFlow</h1>
@@ -36,7 +45,10 @@ export default function App() {
       updateTask = {updateTask}
       deleteTask = {deleteTask} />
       <Progressstracker tasks = {tasks}/>
-      <button className= "clear-btn">Clear All Tasks</button>
+      {tasks.length > 0 && (
+      <button onClick={clearAllTasks} className= "clear-btn">Clear All Tasks</button>)}
+      {tasks.length > 0 && (
+      <button onClick={clearTasks} className="all-btn">Clear Completed Tasks</button>)}
     </div>
   )
 }

@@ -219,6 +219,23 @@ ul {
   background: #ff6b6b;
 }
 
+.all-btn {
+  background: #e74c3c;
+  color: #ffffff;
+  border: none;
+  margin-left: 20px;
+}
+
+.all-btn:hover {
+  background: #ff6b6b;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: #888;
+  opacity: 0.7;
+}
+
 /* Stats */
 .stats {
   margin-top: 20px;

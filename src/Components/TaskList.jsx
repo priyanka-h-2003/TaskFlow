@@ -9,7 +9,7 @@ export default function TaskList({tasks, updateTask, deleteTask}) {
       {tasks.map((task, index) => (
         <li key = {index}>
           <div className="task-text">
-            <span>{task.text}
+            <span className={task.completed ? "completed-task" : ""}>{task.text}
               <small>({task.priority}, {task.category})</small>
             </span>
           </div>
